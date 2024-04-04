@@ -1,8 +1,41 @@
-# Backend_Authenticate9
-Coding Task
+# Backend_Authenticate9 
+# Authenticate9
 
-Create a REST api to be consumed by a mobile app, which is somewhat similar to various popular apps
-which tell you if a number is spam, or allow you to find a person’s name by searching for their phone
-number.
-You can use any NodeJs framework to accomplish this task.
-For persistence you need to use a relational database along with an ORM for your framework.
+### Description
+
+#### This project is built using Node.js and Express.js and Postgres for managing and storing users, contacts, spam numbers, and performing search operations.
+
+## Installation
+
+Clone the repository:
+
+```bas
+git clone https://github.com/SRSongirkar/Backend_Authenticate9.git
+```
+
+## Install dependencies:
+
+```python
+npm install
+
+#Set up environment variables:
+Create a .env file in the root directory and define the PORT and AccessToken variables:
+
+# npm start
+The server will start listening on the specified port.
+
+```
+
+## Technologies Used
+
+* Node.js
+* Express.js
+* Sequelize
+* PostgreSQL
+
+## connect with me :)
+
+[Here](https://github.com/SRSongirkar)
+
+
+
