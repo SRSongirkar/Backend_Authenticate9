@@ -1,0 +1,178 @@
+{
+	"info": {
+		"_postman_id": "036d1473-4b90-4422-af31-f8bf548cc074",
+		"name": "Autenticate9",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "16118180"
+	},
+	"item": [
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"AniketP\",\r\n  \"phoneNumber\": \"8787871234\",\r\n  \"password\": \"1234567\",\r\n  \"email\": \"Aniket@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:5000/api/v1/user/register"
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"Aniket@gmail.com\",\r\n    \"password\":\"1234567\"\r\n}   ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:5000/api/v1/user/login"
+			},
+			"response": []
+		},
+		{
+			"name": "Mark As a Spam",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzEyMjM3ODYxfQ.47kn7Tt55VCGbDqMPwrv-fPulHVYNwo4n-LsdRMFg9c"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"phoneNumber\":\"9370154115\",\r\n    \"userId\":\"9\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:5000/api/v1/search/markAsSpam"
+			},
+			"response": []
+		},
+		{
+			"name": "getspan",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzEyMjM4Nzc1fQ.It-0_hyHVDBRYEDjrQ0uISJiQwZgV_a3yigvwxfzxy4"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "localhost:5000/api/v1/spam/getSpamReports/007"
+			},
+			"response": []
+		},
+		{
+			"name": "search by name",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzEyMjM5Mzc5fQ.u0VnZJ7b38DEPMzfhqLBRlds1ha6ZKFOC-hzjV5ETTM"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Harshal Patil\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:5000/api/v1/search/searchByName/"
+			},
+			"response": []
+		},
+		{
+			"name": "searchByPhoneNumber",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzEyMjQwNTk5fQ.MsQ8o9jIGRi8L2Exdokmff1Em6WlZXgEu57_ujTeakg"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:5000/api/v1/search/searchByPhoneNumber/9370154116"
+			},
+			"response": []
+		},
+		{
+			"name": "AddContact",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzEyMjQ1OTgxfQ.h8sa-ZaYHIcktz86dycbAdvxcWN9sXsEE5Nq2aJVFCM"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\": \"003\",\r\n    \"name\": \"Tejas\",\r\n    \"phoneNumber\": \"9303070123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:5000/api/v1/contact/addContact"
+			},
+			"response": []
+		},
+		{
+			"name": "getContacts",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzEyMjQ2MjY5fQ.AE8H5_dVRgh8Ie-icgnLV7S0k05vBP7BalqVPk0Q5kM"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "localhost:5000/api/v1/contact/getContacts/001"
+			},
+			"response": []
+		}
+	]
+}
