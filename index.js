@@ -10,7 +10,7 @@ const Randomsampledata = require("./randomsampledata.js");
 const authMiddleware = require("./Middleware/authMiddleware.js");
 const searchRoutes = require("./Routes/searchRoutes.js");
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 5432;
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));

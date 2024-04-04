@@ -3,12 +3,17 @@ const User = require('./Models/User');
 const Contact = require('./Models/Contact');
 const SpamReport = require('./Models/SpamReport');
 
-const sequelize = new Sequelize('postgres', 'postgres', 'admin', {
+const sequelize = new Sequelize('backendauthenticate9', 'backendauthenticate9_user', 'wAVLTKk7QgXYrwFe5QlH1U4WLHhgot0z', {
   dialect: 'postgres',
-  host: 'localhost',
-  port: 7039,
+  host: 'dpg-co7e7a6v3ddc7394r9jg-a',
+  port: 5432,
   logging: false // Disable logging SQL queries
 });
+
+// const sequelize = new Sequelize('your_database_url_here', {
+//     dialect: 'postgres',
+//     logging: false // Disable logging SQL queries
+//   });
 
 async function connectToDatabase() {
   try {
